@@ -3,12 +3,14 @@ package com.study.mvc20220927syw.controller;
 
 import com.study.mvc20220927syw.dto.TestReqDto;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
+@Service
 public class PageController {
 
     @GetMapping("/test1")

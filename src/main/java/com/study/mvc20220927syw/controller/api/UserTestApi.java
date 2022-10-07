@@ -48,6 +48,7 @@ public class UserTestApi {
     @ResponseBody
     @PostMapping("/api/test/user/json")
     public Object addUserJSON(@RequestBody UserReqDto userReqDto){
+
         List<Map<Integer, UserReqDto>> list = new ArrayList<Map<Integer,UserReqDto>>();
         Map<Integer,UserReqDto> map = null;
 
@@ -57,8 +58,6 @@ public class UserTestApi {
             }
             map.put(i + 1, userReqDto);
             if ((i - 9) % 10 == 0) {
-
-
                 list.add(map);
             }
         }
