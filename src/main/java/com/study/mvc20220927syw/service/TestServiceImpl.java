@@ -14,7 +14,7 @@ public class TestServiceImpl implements TestService {
    // @Qualifier("tr2") // tr2를 쓰고싶으면 <- 이렇게
     private TestRepository testRepository;
 
-    @Override
+    @Override 
     public void logic1() {
         System.out.println("테스트1 클래스에서 logic1 메소드 실행");
         testRepository.insert();
